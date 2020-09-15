@@ -21,7 +21,7 @@ class City:
 # Note that the first line of the CSV is header that describes the fields--this
 # should not be loaded into a City object.
 cities = []
-with open('cities.csv', newline='') as x:
+with open('../src/cityreader/cities.csv', newline='') as x:
   reader = csv.reader(x)
   next(reader)
   cities = list(reader)
